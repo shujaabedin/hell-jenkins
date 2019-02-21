@@ -1,7 +1,6 @@
 #!/bin/sh
  
-ssh ubuntu@176.34.144.11 <<EOF
-  sudo su -
+  <<EOF
   cd /var/www/html/hello-jenkins
   git pull
   npm install --production
