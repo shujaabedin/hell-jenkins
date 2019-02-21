@@ -1,6 +1,5 @@
 #!/bin/sh
 
 cd /var/www/html/hello-jenkins
-sudo git pull
 sudo npm install --production
 sudo forever restartall
