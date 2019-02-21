@@ -1,5 +1,8 @@
-#!/bin/sh
+#!/bin/bash
 
-cd /var/www/html/hello-jenkins
-sudo npm install --production
-sudo forever restartall
+ssh ubuntu@176.34.144.11 <<EOF 
+	sudo cd /var/www/html/hello-jenkins
+	sudo npm install --production
+	sudo forever restartall
+	exit
+EOF
