@@ -1,7 +1,6 @@
 #!/bin/sh
- 
-  sudo su -
-  cd /var/www/html/hello-jenkins
-  git pull
-  npm install --production
-  forever restartall
+
+cd /var/www/html/hello-jenkins
+sudo git pull
+sudo npm install --production
+sudo forever restartall
